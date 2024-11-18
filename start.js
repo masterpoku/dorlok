@@ -29,7 +29,6 @@ device.on('data', data => {
         if (char === 'Enter') {
             // Jika "Enter", proses input login
             console.log(`Input diterima: ${inputBuffer}`);
-            processLogin(inputBuffer);
             inputBuffer = ''; // Reset buffer
         } else {
             inputBuffer += char; // Tambahkan karakter ke buffer
