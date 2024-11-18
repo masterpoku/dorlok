@@ -5,7 +5,7 @@ const devices = HID.devices();
 console.log('Connected HID devices:', devices);
 
 // Find your device by vendorId and productId
-const deviceInfo = devices.find(d => d.vendorId === 0x1234 && d.productId === 0x5678);
+const deviceInfo = devices.find(d => d.vendorId === 65535 && d.productId === 53);
 
 if (!deviceInfo) {
     console.error('Device not found!');
